@@ -11,6 +11,7 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 nav{
     height: 100px;
@@ -38,9 +39,9 @@ nav i{
     padding: 15px 6%;
 }
 #content h1{
-    font-size: 85px;
+    font-size: 4.8vw;
     font-weight: 500;
-    line-height: 82px;
+    line-height: 4.7vw;
 }
 #content-info{
     margin-top: 4%;
@@ -50,8 +51,8 @@ nav i{
     justify-content: space-between;
 }
 #content-info p{
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
     font-weight: 500;
 }
 #content-info-right{
@@ -85,9 +86,274 @@ nav i{
     opacity: 1;
 }
 footer{
-    height: 34.75%;
+    height: calc(100% - 100px);
     width: 100%;
     background-image: url(model.jpg);
-    background-position: 0 15%;
+    background-position: right;
     background-size: cover;
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav{
+        height: 60px;
+        /* wi   dth: 100%; */
+        /* background-color: red; */
+        /* display: flex;
+        align-items: center;
+        justify-content: end; */
+        padding: 20px;
+        gap: 20px;
+    }
+    nav h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    nav i{
+        font-size: 17px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 9px 5px ;
+    }
+    #content{
+        width: 100%;
+        padding: 15px 6%;
+    }
+    #content h1{
+        font-size: 7vw;
+        font-weight: 500;
+        line-height: 6.7vw;
+    }
+    #content-info{
+        margin-top: 7%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3.5vh;
+    }
+    #content-info p{
+        font-size: 4vw;
+        line-height: 4.4vw;
+        font-weight: 500;
+        /* width: fit-content; */
+    }
+    #content-info-right{
+        width: 100%;
+        /* padding: 20px; */
+        /* margin: 5px; */
+    }
+    .elem{
+        border-top: 1.7px solid black;
+        /* padding-top: 10px; */
+        /* margin-top: 30px; */
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #content-info-right a{
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+    }
+    .elem i{
+        font-size: 19px;
+        font-weight: 500;
+        opacity: 1;
+    }
+    .elem:hover{
+        background-color: rgb(245, 245, 245);
+    } 
+    footer{
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-image: url(model.jpg);
+        background-position: bottom;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width:900px){
+    #main{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav{
+        height: 60px;
+        /* wi   dth: 100%; */
+        /* background-color: red; */
+        /* display: flex;
+        align-items: center;
+        justify-content: end; */
+        padding: 20px;
+        gap: 20px;
+    }
+    nav h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    nav i{
+        font-size: 17px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 9px 5px ;
+    }
+    #content{
+        width: 100%;
+        padding: 15px 6%;
+    }
+    #content h1{
+        font-size: 7vw;
+        font-weight: 500;
+        line-height: 6.7vw;
+    }
+    #content-info{
+        margin-top: 7%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5vh;
+    }
+    #content-info p{
+        font-size: 3vw;
+        line-height: 4.4vw;
+        font-weight: 500;
+        /* width: fit-content; */   
+    }
+    #content-info-right{
+        width: 100%;
+        /* padding: 20px; */
+        /* margin: 5px; */
+    }
+    .elem{
+        border-top: 1.7px solid black;
+        /* padding-top: 10px; */
+        /* margin-top: 30px; */
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #content-info-right a{
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+    }
+    .elem i{
+        font-size: 19px;
+        font-weight: 500;
+        opacity: 1;
+    }
+    .elem:hover{
+        background-color: rgb(245, 245, 245);
+    } 
+    footer{
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-image: url(model.jpg);
+        background-position: bottom;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width:1100px){
+    #main{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav{
+        height: 60px;
+        /* wi   dth: 100%; */
+        /* background-color: red; */
+        /* display: flex;
+        align-items: center;
+        justify-content: end; */
+        padding: 20px;
+        gap: 20px;
+    }
+    nav h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    nav i{
+        font-size: 17px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 9px 5px ;
+    }
+    #content{
+        width: 100%;
+        padding: 15px 6%;
+    }
+    #content h1{
+        font-size: 7vw;
+        font-weight: 500;
+        line-height: 6.7vw;
+    }
+    #content-info{
+        margin-top: 7%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5vh;
+    }
+    #content-info p{
+        font-size: 3vw;
+        line-height: 4.4vw;
+        font-weight: 500;
+        /* width: fit-content; */   
+    }
+    #content-info-right{
+        width: 100%;
+        /* padding: 20px; */
+        /* margin: 5px; */
+    }
+    .elem{
+        border-top: 1.7px solid black;
+        /* padding-top: 10px; */
+        /* margin-top: 30px; */
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #content-info-right a{
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+    }
+    .elem i{
+        font-size: 19px;
+        font-weight: 500;
+        opacity: 1;
+    }
+    .elem:hover{
+        background-color: rgb(245, 245, 245);
+    } 
+    footer{
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-image: url(model.jpg);
+        background-position: bottom;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
 }
